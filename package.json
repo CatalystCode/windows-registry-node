@@ -1,0 +1,45 @@
+{
+  "name": "windows-registry-node",
+  "version": "1.0.0",
+  "description": "Read and Write to the Windows registry in-process from Node.js. Easily set application file associations and other goodies & such.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ffi": "^2.0.0",
+    "grunt": "^0.4.5",
+    "grunt-mocha-cli": "^2.0.0",
+    "load-grunt-tasks": "^3.3.0",
+    "ref": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mocha-cli": "^2.0.0",
+    "load-grunt-tasks": "^3.3.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsbeautifier": "^0.2.10",
+    "grunt-jscs": "^2.1.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatalystCode/windows-registry-node.git"
+  },
+  "keywords": [
+    "Windows",
+    "Registry",
+    "regedit",
+    "file",
+    "association"
+  ],
+  "author": "sedouard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CatalystCode/windows-registry-node/issues"
+  },
+  "homepage": "https://github.com/CatalystCode/windows-registry-node#readme"
+}
