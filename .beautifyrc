@@ -1,0 +1,9 @@
+{
+  "js": {
+      "indentChar": " ",
+      "indentLevel": 0,
+      "indentSize": 4,
+      "indentWithTabs": false,
+      "space_after_anon_function": "true"
+  }
+}
