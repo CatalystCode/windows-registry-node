@@ -55,3 +55,4 @@ grunt.initConfig({
     }
 });
 grunt.registerTask('test', ['jshint', 'jscs', 'mochacli:all']);
+grunt.registerTask('unitTest', ['mochacli:all']);
