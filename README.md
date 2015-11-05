@@ -11,6 +11,14 @@ required. Then install the package:
 npm install windows-registry-node
 ```
 
+## Creating File Associations
+
+To create a file association you can call the `fileAssociation.associateExeForFile` api which will make windows assign a default program for
+an arbitrary file extension:
+
+```js
+fileAssociation.associateExeForFile('myTestHandler', 'A test handler for unit tests', 'C:\\path\\to\\icon', 'C:\\Program Files\\nodejs\\node.exe %1', '.zzz');
+```
 ## Reading / Writing to the Windows Registry
 
 This library implements only a few of the basic registry commands, which allow you to do basic CRUD 
@@ -61,3 +69,7 @@ To write a value, you'll again need a [Key](lib/key.js) object and just need to 
 ```js
 registry.setValueForKeyObject(key, 'test_value_name', windef.REG_VALUE_TYPE.REG_SZ, 'test_value');
 ``` 
+
+## More Docs?
+
+Make your way over to the [tests section](test) to see how the module is used.
