@@ -1,6 +1,6 @@
 # windows-registry-node
 
-Read and Write to the Windows registry in-process from Node.js. Easily set application file associations and other goodies &amp; such.
+Read and Write to the Windows registry in-process from Node.js. Easily set application file associations and other goodies &amp; such. You can also enable your application to run processes as an Administrator.
 
 ## Install
 
@@ -69,6 +69,13 @@ To write a value, you'll again need a [Key](lib/key.js) object and just need to 
 ```js
 registry.setValueForKeyObject(key, 'test_value_name', windef.REG_VALUE_TYPE.REG_SZ, 'test_value');
 ``` 
+## Launching a Process as An Admin
+
+To launch a process as an Administrator, you can call the `uac.elevate` api, which will launch a process as an Administrator causing the UAC (User Account Control) elevation prompt to appear if required. This is similar to the Windows Explorer command "Run as administrator".  Pass in `FILEPATH` to the process you want to elevate. Pass in any`PARAMETERS` to run with the process. Since this is an asychronous call, pass in a callback to handle user's selection.
+
+```js
+uac.elevate('C:\\Program Files\\nodejs\\node.exe', 'index.js', function (err, result){console.log('callback');});
+```
 
 ## More Docs?
 

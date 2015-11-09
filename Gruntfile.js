@@ -5,6 +5,7 @@ var files = ['lib/**/*.js', 'app.js', 'test/**/*.js'];
 grunt.initConfig({
     mochacli: {
         options: {
+            timeout: 4000,
             reporter: 'spec',
             bail: true
         },

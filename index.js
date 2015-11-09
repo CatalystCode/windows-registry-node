@@ -4,5 +4,6 @@ module.exports = {
     types: require('./lib/types'),
     windef: require('./lib/windef'),
     Key: require('./lib/key'),
-    fileAssociation: require('./lib/file_association')
+    fileAssociation: require('./lib/file_association'),
+    uac: require('./lib/uac')
 };
