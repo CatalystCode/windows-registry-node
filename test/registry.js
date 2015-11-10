@@ -11,10 +11,9 @@ describe('Registry API open tests', () => {
         assert.equal(key.handle !== null, true);
         key.close();
     });
-
     it('Should open a subkey provided a previously opened key', () => {
-        var key = registry.openKeyFromPredefined(windef.HKEY.HKEY_CLASSES_ROOT, '.txt', windef.KEY_ACCESS.KEY_ALL_ACCESS);
-        var key2 = registry.openKeyFromKeyObject(key, 'OpenWithList', windef.KEY_ACCESS.KEY_ALL_ACCESS);
+        var key = registry.openKeyFromPredefined(windef.HKEY.HKEY_CLASSES_ROOT, '', windef.KEY_ACCESS.KEY_ALL_ACCESS);
+        var key2 = registry.openKeyFromKeyObject(key, '.txt', windef.KEY_ACCESS.KEY_ALL_ACCESS);
         assert.equal(key2.handle !== null, true);
         key.close();
     });
@@ -56,8 +55,9 @@ describe('Set / Query Value Tests', function () {
         registry.setValueForKeyObject(key, 'test_value_name', windef.REG_VALUE_TYPE.REG_SZ, 'test_value');
 
         var value = registry.queryValueForKeyObject(key, 'test_value_name');
-
+        console.log('her is  value:' + value);
         assert.equal(value, 'test_value');
+        console.log('lngth:' + value.length);
         key.close();
     });
 });
