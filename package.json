@@ -1,6 +1,6 @@
 {
-  "name": "windows-registry-node",
-  "version": "1.0.0",
+  "name": "windows-registry",
+  "version": "0.0.2",
   "description": "Read and Write to the Windows registry in-process from Node.js. Easily set application file associations and other goodies & such.",
   "main": "index.js",
   "directories": {
@@ -42,7 +42,16 @@
     "uac",
     "association"
   ],
-  "author": "sedouard",
+  "author": { "name" : "Steven Edouard",
+    "email" : "sedouard@microsoft.com",
+    "url" : "http://stevenedouard.com"
+  },
+  "contributors": [
+      { "name" : "Rita Zhang",
+        "email" : "ritazh@microsoft.com",
+        "url" : "https://ritazh.com"
+      }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CatalystCode/windows-registry-node/issues"
