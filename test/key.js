@@ -2,8 +2,8 @@
 'use strict';
 require('./test_helper');
 var assert = require('assert'),
-    windef = require('../lib/windef'),
-    Key = require('../lib/key');
+    windef = require('../index').windef,
+    Key = require('../index').Key;
 
 describe('Key Open Tests', () => {
     it('Should create a key given a subkey', () => {

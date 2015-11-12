@@ -4,7 +4,7 @@ if (process.env.TEST_MOCKS_ON) {
     require('./test_helper');
 }
 
-var utils = require('../lib/utils'),
+var utils = require('../index').utils,
     assert = require('assert');
 
 describe('File Association Test', () => {
