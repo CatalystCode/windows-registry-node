@@ -1,5 +1,7 @@
 # windows-registry-node
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ot69wbkyrcv7ig3p/branch/master?svg=true)](https://ci.appveyor.com/project/sedouard/windows-registry-node/branch/master)
+
 Read and Write to the Windows registry in-process from Node.js. Easily set application file associations and other goodies &amp; such. You can also enable your application to run processes as an Administrator.
 
 ## Install
