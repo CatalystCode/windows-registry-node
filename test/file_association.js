@@ -1,5 +1,9 @@
 /* global describe, it */
 'use strict';
+if (process.env.TEST_MOCKS_ON) {
+    require('./test_helper');
+}
+
 var utils = require('../lib/utils'),
     assert = require('assert');
 
