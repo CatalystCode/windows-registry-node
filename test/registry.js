@@ -2,12 +2,11 @@
 'use strict';
 require('./test_helper');
 
-var assert = require('assert');
+var assert = require('assert'),
+    registry = require('../index').registry,
+    windef = require('../index').windef;
 
 describe('Registry API open tests', () => {
-    var registry = require('../lib/registry'),
-        windef = require('../lib/windef');
-
     it('Should open a subkey provided a predefined key', () => {
         var key = registry.openKeyFromPredefined(windef.HKEY.HKEY_CLASSES_ROOT, '.txt', windef.KEY_ACCESS.KEY_ALL_ACCESS);
         console.log(key.handle);
@@ -23,8 +22,6 @@ describe('Registry API open tests', () => {
 });
 
 describe('Create Key Tests', function () {
-    var registry = require('../lib/registry'),
-        windef = require('../lib/windef');
     it('Should create a new key and delete it', () => {
         var key = registry.openKeyFromPredefined(windef.HKEY.HKEY_CLASSES_ROOT, '.txt', windef.KEY_ACCESS.KEY_ALL_ACCESS);
 
@@ -52,8 +49,6 @@ describe('Create Key Tests', function () {
 });
 
 describe('Set / Query Value Tests', function () {
-    var registry = require('../lib/registry'),
-        windef = require('../lib/windef');
     it('Should set and read REG_SZ Value', () => {
         var key = registry.openKeyFromPredefined(windef.HKEY.HKEY_CLASSES_ROOT, '.txt', windef.KEY_ACCESS.KEY_ALL_ACCESS);
 
