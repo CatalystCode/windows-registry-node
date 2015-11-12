@@ -1,8 +1,9 @@
 /* global describe, it */
 'use strict';
-var windef = require('../lib/windef'),
-    Key = require('../lib/key'),
-    assert = require('assert');
+require('./test_helper');
+var assert = require('assert'),
+    windef = require('../lib/windef'),
+    Key = require('../lib/key');
 
 describe('Key Open Tests', () => {
     it('Should create a key given a subkey', () => {
@@ -65,6 +66,7 @@ describe('Set / Query Value Tests', function () {
         key.setValue('test_value_name', windef.REG_VALUE_TYPE.REG_SZ, 'test_value');
 
         var value = key.getValue('test_value_name');
+
         assert.equal(value, 'test_value');
         key.close();
     });
