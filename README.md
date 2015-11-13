@@ -9,7 +9,7 @@ Read and Write to the Windows registry in-process from Node.js. Easily set appli
 This library interacts with native Windows APIs. To add this module to your Node application, install the package:
 
 ```
-npm install windows-registry-node
+npm install windows-registry
 
 ```
 
