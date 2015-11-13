@@ -28,7 +28,7 @@ utils.associateExeForFile('myTestHandler', 'A test handler for unit tests', 'C:\
 ```
 After running the code above, you will see files with the extension of `.zzz` will be automatically associated with the Node program and their file icon will be changed to the Node file icon.
 
-!['GIF showing file association'](https://github.com/CatalystCode/windows-registry-node/blob/fix_readme/fileassoc.jpg)
+!['GIF showing file association'](https://github.com/CatalystCode/windows-registry-node/blob/readmeblob/fileassoc.jpg)
 
 ## Reading and Writing to the Windows Registry
 
@@ -115,7 +115,7 @@ utils.elevate('C:\\Program Files\\nodejs\\node.exe', 'index.js', function (err, 
 ```
 The process you want to launch with admin access will only be launched after the callback is called and only if the user clicks Yes in the UAC prompt. Otherwise, the process will not be launched. If the user is already running as an admin, the UAC prompt will not be triggered and the process you provided will be launched as an administrator automatically.
 
-!['GIF showing launch process as an admin'](https://github.com/CatalystCode/windows-registry-node/blob/fix_readme/elevate.gif)
+!['GIF showing launch process as an admin'](https://github.com/CatalystCode/windows-registry-node/blob/readmeblob/elevate.gif)
 
 ## More Docs?
 
