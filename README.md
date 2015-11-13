@@ -106,7 +106,7 @@ The return value depends on the type of the key (REG_SZ for example will give yo
 
 ## Launching a Process as an Admin
 
-To launch a process as an Administrator, you can call the `uac.elevate` API, which will launch a process as an Administrator causing the UAC (User Account Control) elevation prompt to appear if required. This is similar to the Windows Explorer command "Run as administrator".  Pass in `FILEPATH` to the process you want to elevate. Pass in any`PARAMETERS` to run with the process. Since this is an asynchronous call, pass in a callback to handle user's selection.
+To launch a process as an Administrator, you can call the `utils.elevate` API, which will launch a process as an Administrator causing the UAC (User Account Control) elevation prompt to appear if required. This is similar to the Windows Explorer command "Run as administrator".  Pass in `FILEPATH` to the process you want to elevate. Pass in any`PARAMETERS` to run with the process. Since this is an asynchronous call, pass in a callback to handle user's selection.
 
 ```js
 var utils = require('windows-registry').utils;
