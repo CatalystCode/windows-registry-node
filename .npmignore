@@ -1,0 +1,11 @@
+.vscode
+test
+.beautifyrc
+.jscsrc
+.jshintrc
+.npmignore
+appveyor.yml
+*.gif
+*.jpg
+Gruntfile.js
+jsconfig.json
