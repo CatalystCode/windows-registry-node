@@ -16,7 +16,7 @@ describe('File Association Test', () => {
 
 describe('UAC elevate tests', () => {
     it('Should get results for elevate for a given file', (done) => {
-        utils.elevate('C:\\Program Files\\nodejs\\node.exe', 'index.js', function (err, result) {
+        utils.elevate(process.execPath, 'index.js', function (err, result) {
             assert.equal(err, null);
             assert.equal(result, true);
             done();
