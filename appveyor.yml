@@ -6,6 +6,8 @@ environment:
 install:
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
+  # Upgrade npm
+  - npm install -g npm@3
   # install modules
   - npm install
   - npm install grunt-cli -g
