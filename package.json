@@ -38,15 +38,17 @@
     "uac",
     "association"
   ],
-  "author": { "name" : "Steven Edouard",
-    "email" : "sedouard@microsoft.com",
-    "url" : "http://stevenedouard.com"
+  "author": {
+    "name": "Steven Edouard",
+    "email": "sedouard@microsoft.com",
+    "url": "http://stevenedouard.com"
   },
   "contributors": [
-      { "name" : "Rita Zhang",
-        "email" : "ritazh@microsoft.com",
-        "url" : "https://ritazh.com"
-      }
+    {
+      "name": "Rita Zhang",
+      "email": "ritazh@microsoft.com",
+      "url": "https://ritazh.com"
+    }
   ],
   "license": "ISC",
   "bugs": {
